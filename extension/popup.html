@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        Amazon Price Tracker
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="popup.css"
+    >
+
+    <script
+        src="chart.min.js">
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+    <header>
+
+        <h1>
+            Amazon Tracker
+        </h1>
+
+        <span id="status">
+            Ready
+        </span>
+
+    </header>
+
+
+    <div id="loading">
+
+        Reading product...
+
+    </div>
+
+
+    <main id="content">
+
+        <img
+            id="productImage"
+            class="product-image"
+        >
+
+
+        <h2 id="productTitle">
+            Product
+        </h2>
+
+
+        <div class="stats">
+
+            <div>
+
+                <span>
+                    Price
+                </span>
+
+                <strong id="price">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Rating
+                </span>
+
+                <strong id="rating">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Reviews
+                </span>
+
+                <strong id="reviews">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="trackButton"
+            class="primary"
+        >
+            Track Product
+        </button>
+
+
+        <section>
+
+            <h3>
+                Price History
+            </h3>
+
+            <canvas
+                id="priceChart">
+            </canvas>
+
+        </section>
+
+
+        <section>
+
+            <h3>
+                Customer Reviews
+            </h3>
+
+            <div id="reviewList">
+
+                No reviews loaded.
+
+            </div>
+
+        </section>
+
+
+        <button
+            id="exportButton"
+            class="secondary"
+        >
+            Export CSV
+        </button>
+
+    </main>
+
+</div>
+
+
+<script
+    src="popup.js">
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    width: 390px;
+
+    min-height: 500px;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background: #f5f6f8;
+
+    color: #222;
+}
+
+
+.app {
+
+    padding: 18px;
+}
+
+
+header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom: 15px;
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 21px;
+}
+
+
+#status {
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+
+#loading {
+
+    text-align: center;
+
+    padding: 40px 10px;
+
+    color: #777;
+}
+
+
+#content {
+
+    display: none;
+}
+
+
+.product-image {
+
+    display: block;
+
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 10px;
+}
+
+
+h2 {
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    margin: 15px 0;
+}
+
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+}
+
+
+.stats div {
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+.stats span {
+
+    display: block;
+
+    font-size: 11px;
+
+    color: #777;
+
+    margin-bottom: 5px;
+}
+
+
+.stats strong {
+
+    font-size: 13px;
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.primary {
+
+    background: #111827;
+
+    color: white;
+}
+
+
+.secondary {
+
+    background: #e5e7eb;
+
+    color: #111;
+}
+
+
+section {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-top: 12px;
+}
+
+
+section h3 {
+
+    font-size: 15px;
+
+    margin-top: 0;
+}
+
+
+#priceChart {
+
+    max-height: 180px;
+}
+
+
+.review {
+
+    border-bottom:
+        1px solid #eee;
+
+    padding: 10px 0;
+}
+
+
+.review:last-child {
+
+    border-bottom: none;
+}
+
+
+.review-name {
+
+    font-weight: bold;
+
+    font-size: 12px;
+}
+
+
+.review-rating {
+
+    font-size: 11px;
+}
+
+
+.review-text {
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #555;
+
+    margin-top: 5px;
+}

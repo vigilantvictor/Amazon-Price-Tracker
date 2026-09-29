@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+
+    "name": "Amazon Price Tracker",
+
+    "version": "1.0.0",
+
+    "description": "Track Amazon product prices and reviews.",
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "host_permissions": [
+        "https://www.amazon.in/*",
+        "https://www.amazon.com/*",
+        "https://www.amazon.co.uk/*",
+        "http://127.0.0.1:5000/*"
+    ],
+
+    "action": {
+        "default_popup": "popup.html",
+
+        "default_title":
+            "Amazon Price Tracker"
+    },
+
+    "content_scripts": [
+
+        {
+            "matches": [
+                "https://www.amazon.in/*",
+                "https://www.amazon.com/*",
+                "https://www.amazon.co.uk/*"
+            ],
+
+            "js": [
+                "content.js"
+            ],
+
+            "run_at": "document_idle"
+        }
+
+    ]
+}
